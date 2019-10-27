@@ -15,7 +15,7 @@ if args.s:
     print("Compiled " + args.s + " in", round(time.time() - prevTime, 3), "seconds")
 
 if args.all:
-    led_files = [i for i in os.listdir() if i[-4:] == ".led"]
+    led_files = [i for i in os.listdir() if i[-4:] == ".qpb"]
     for input_file in led_files:
         prevTime = time.time()
         compiler.compile_file(input_file)
