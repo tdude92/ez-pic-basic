@@ -2,9 +2,13 @@
 An easy and efficient language that compiles into PIC BASIC for the programming of a 4x4 LED cube using a PIC16f887a microcontroller. Made with @Keraisyn.
 
 ## Compilation Instructions
-The python file *qbpcompile.py* compiles files with the .qbp extension into .picb files containing PIC BASIC code.
+The python file *qpbcompile.py* compiles files with the .qpb extension into .picb files containing PIC BASIC code.
 
-    qbpcompile.py [-a|s file_name]
+    python qpbcompile.py [-a|s file_name]
+    
+or
+
+    python3 qpbcompile.py [-a|s file_name]
  
 # Compiler Flags
 **-a**: Compile all .qbp files in the same directory as qbpcompile.py
