@@ -65,7 +65,8 @@ def compile_line(line):
         # Since it is a comment or whitespace, don't do anything.
         pass
     elif parsed_line[0] == "LOOP":
-        code += parsed_line[1] + " var word\nfor " + parsed_line[1] + " = 1 to " + parsed_line[2] + "\n"
+        datatype = "byte" if int(parsed_line[2]) < 256 else "word"
+        code += parsed_line[1] + " var " + datatype + "\nfor " + parsed_line[1] + " = 1 to " + parsed_line[2] + "\n"
     elif parsed_line[0] == "GOTO":
         code += "next " + parsed_line[1] + "\n"
     else:
