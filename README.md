@@ -11,7 +11,7 @@ or
     python3 qpbcompile.py [-a|s file_name]
  
 ## Compiler Flags
-**-a**: Compile all .qbp files in the same directory as qbpcompile.py
+**-a**: Compile all .qbp files in the same directory as qbpcompile.py\
 **-s file_name**: Only compile file_name (Don't forget to add the .qbp extension to the end of file_name).
 
 ## Language Guide
