@@ -86,5 +86,3 @@ As evident by their names, LOOP specifies the beginning of a loop, its name, and
     201 202 203
     GOTO mainloop
     // This code loops over two frames 1000 times.
-
-That's all folks, have fun passing Mr Webb's class.
